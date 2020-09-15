@@ -1,5 +1,5 @@
 # LED-
-work1</br>
+工作1</br>
 輸出腳設定 2~9</br>
 功能:LED從左向右逐一亮起延遲0.1秒
 ```C++
@@ -26,7 +26,7 @@ void loop() {
 }
 ```
 照片位</br>
-work2</br>
+工作2</br>
 輸出腳設定 2~9</br>
 功能:LED從右向左逐一亮起延遲0.1秒
 ```c++
@@ -51,5 +51,27 @@ void loop() {
    LED++;
    delay(100);
 }
+```
+照片位</br>
+工作3</br>
+輸出腳設定 3</br>
+描述:初始設定(255) 每0.08秒下降(5) 直到歸零(0)再上升(5)
+```c++
+int x =255;
+int y =5;
+void setup() {
+  // put your setup code here, to run once:
+
+  pinMode (3,OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+   analogWrite(3,x);
+   x = x-y;
+   if(x ==0 || x ==255)
+   y = -y;
+   delay(80);
+   }
 ```
 照片位
