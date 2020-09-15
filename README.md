@@ -1,7 +1,7 @@
 # LED-
 work1</br>
 輸出腳設定 2~9</br>
-功能:LED從向右逐一亮起延遲0.1秒
+功能:LED從左向右逐一亮起延遲0.1秒
 ```C++
 int LED=10;
 void setup() {
@@ -22,6 +22,33 @@ void loop() {
    else
      LED=10;
    LED--;
+   delay(100);
+}
+```
+照片位
+work2</br>
+輸出腳設定 2~9</br>
+功能:LED從右向左逐一亮起延遲0.1秒
+```c++
+int LED=10;
+void setup() {
+  // put your setup code here, to run once:
+for(int i=2;i<10;i++)
+
+  pinMode (i,OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+   for(int i=2;i<10;i++)
+
+   digitalWrite(i, HIGH);
+   if(LED<=10)
+    digitalWrite(LED,LOW);
+   
+   else
+     LED=1;
+   LED++;
    delay(100);
 }
 ```
