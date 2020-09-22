@@ -25,7 +25,7 @@ void loop() {
    delay(100);
 }
 ```
-照片位</br>
+![gmail](https://github.com/UvularGecko2125/LED-/blob/master/DSC_0003.JPG)
 工作2</br>
 輸出腳設定 2~9</br>
 功能:LED從右向左逐一亮起延遲0.1秒
