@@ -52,7 +52,7 @@ void loop() {
    delay(100);
 }
 ```
-照片位</br>
+![gmail](https://github.com/UvularGecko2125/LED-/blob/master/DSC_0004.JPG)
 工作3</br>
 輸出腳設定 3 初始設定值255 每0.08S-5 直到歸零 在每0.08S+5 </br>
 功能:像人一樣會呼吸的燈(這呼吸速度估計快死了)
